@@ -7,6 +7,6 @@
 +Для поддержки старых браузеров было использованно:
   1. *Babel* Для js.
   2. *CSS autoprefixer* для CSS.
-+Была реализована мобильная версия с Burger меню.
+-Была реализована мобильная версия с Burger меню.
 
 [1]:https://www.figma.com/file/ClPSP7KCU1NbvxMXA914hlFk/travel-landing-page-jacobvoyles?node-id=0%3A2 "Figma"
