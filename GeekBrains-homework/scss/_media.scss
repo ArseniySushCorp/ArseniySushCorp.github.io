@@ -1,0 +1,220 @@
+@media (max-width:1150px) {
+  .container{
+    padding: 0 32px !important;
+  }
+  section.top{
+    .top__inner{
+      .top__img{
+        top: 130px;
+        width: 336px;
+        height: 293px;
+        background-size: cover;
+      }
+    }
+  }
+  .what-we-do__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .what-we-do__item{
+    margin-bottom: 32px;
+  }
+  .footer{
+    .container{
+      padding: 0 124px !important;
+    }
+  }
+  .footer__top-text{
+    max-width: 0;
+  }
+  .footer__bottom-list{
+    flex-direction: column;
+  }
+  .footer__bottom-item{
+    margin-bottom: 25px;
+    &:first-child{
+      width: 100% !important;
+      p{
+        max-width: 500px !important;
+      }
+    }
+  }
+
+  section.contacts__main .contacts__inner{
+    flex-wrap: wrap;
+  }
+  section.contacts__main .contacts__inner .contacts__info{
+    width: 50%;
+    margin: 0 auto 64px auto;
+  }
+  section.contacts__main .contacts__inner .contacts__message{
+    margin: 0 auto 64px auto;
+
+  }
+  section.contacts__header p.contacts__header-text.text{
+    max-width: 520px;
+  }
+}
+
+@media (max-width:759px){
+  section.top{
+    height: 678px;
+    .top__inner{
+      .top__img{
+        top: 208px;
+      }
+    }
+  }
+  .footer__top{
+    flex-direction: column;
+    align-items: center;
+  }
+  div.our-project__other-item {
+    margin: 0 0 16px 0 !important;
+  }
+  div.our-project__other{
+    flex-direction: column;
+    align-items: center;
+    div.our-project__other-item{
+      p.our-project__other-title{
+
+      }
+    }
+  }
+  header.header{
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: 664px) {
+  section.top{
+    height: 376px;
+    margin-bottom: 48px;
+    .top__inner{
+      .top__desc{
+        p.top__desc-text{
+          text-align: center;
+          max-width: 100%;
+          margin-bottom: 32px;
+        }
+        a.top__desc-link{
+          margin: 0 auto;
+        }
+        h1.top__desc-title{
+          font-size: 32px;
+          line-height: 37px;
+          text-align: center;
+          margin: 0 auto 12px auto;
+        }
+      }
+      .top__img{
+        display: none;
+      }
+    }
+  }
+  .container{
+    padding: 0 15px !important;
+  }
+  .section-title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .our-project .our-project__other .our-project__other-item .our-project__other-title{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .our-project .our-project__main .our-project__main-title{
+    top: 16px;
+    right: 16px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer{
+    .container{
+      padding: 0 16px !important;
+    }
+  }
+  .footer .container .footer__top .footer__top-desc h4.footer__top-title{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding: 16px 0 32px 0;
+  }
+  .footer .container .footer__top .footer__top-desc p.footer__top-text{
+    text-align: center;
+  }
+  .footer .container .footer__top a.footer__top-link{
+    margin-top: 40px;
+  }
+  .footer .container .footer__top{
+    margin-bottom: 41px;
+  }
+  section.what-we-do .what-we-do__inner .what-we-do__item{
+    height: auto;
+    width: 300px;
+    padding-bottom: 16px;
+  }
+  section.what-we-do .what-we-do__inner .what-we-do__subtitle:before{
+    transform: translateX(4%) !important;
+  }
+  section.what-we-do .what-we-do__inner .bring .what-we-do__subtitle:after{
+    transform: translate(-26%, -19%);
+  }
+  .footer .container .footer__bottom ul.footer__bottom-list li.footer__bottom-item{
+    width: 100%;
+  }
+  section.contacts__header h2.contacts__title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  section.contacts__header p.contacts__header-text.text{
+    font-size: 16px;
+  }
+  section.contacts__main .contacts__inner .contacts__info{
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 32px;
+  }
+  section.contacts__main .contacts__inner .contacts__message{
+    padding: 34px;
+    margin-bottom: 32px;
+  }
+  section.contacts__main .contacts__inner .contacts__message h5.contacts__message-title{
+    font-size: 16px;
+  }
+  section.contacts__main .contacts__inner .contacts__message form.contacts__form label.contacts__label{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .contacts__input{
+    height: 46px;
+  }
+  .contacts__input[placeholder]{
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  section.contacts__main .contacts__inner .contacts__message form.contacts__form .contacts__textarea[placeholder]{
+    padding-top: 12px;
+  }
+  section.contacts__main .contacts__inner .contacts__message form.contacts__form .contacts__textarea{
+    margin-bottom: 45px;
+  }
+  section.contacts__main .contacts__inner .contacts__message button.contacts__button{
+    height: 45px;
+  }
+  section.contacts__main{
+    margin-bottom: 32px;
+  }
+  .contacts-map{
+    margin-bottom: 32px;
+  }
+  section.contacts__main .contacts__inner .contacts__info ul.contacts__list li.item-title{
+    margin-top: 32px;
+  }
+  section.contacts__main .contacts__inner .contacts__info ul.contacts__list li.item-title:first-child:before{
+    left: -30px;
+  }
+  header.header{
+    margin-bottom: 30px;
+  }
+}

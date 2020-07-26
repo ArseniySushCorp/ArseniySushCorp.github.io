@@ -1,0 +1,115 @@
+.footer {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: normal;
+  background: $footer_blue;
+  color: white;
+  .container {
+    .footer__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 96px;
+      .footer__top-desc {
+        h4.footer__top-title {
+          margin: 0;
+          padding: 91px 0 32px 0;
+          max-width: 340px;
+          font-weight: normal;
+          font-size: 36px;
+          line-height: 46px;
+          letter-spacing: 0.05em;
+        }
+        p.footer__top-text {
+          margin: 0;
+          max-width: 336px;
+          opacity: 0.6;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+        }
+      }
+      a.footer__top-link {
+        height: 56px;
+        display: block;
+        padding: 15px 80px;
+        background: $light_blue;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: white;
+        text-decoration: none;
+        align-self: center;
+        margin-top: 90px;
+      }
+    }
+    .footer__bottom {
+      padding-bottom: 64px;
+      ul.footer__bottom-list {
+        margin: 64px 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        li.footer__bottom-item {
+          width: 350px;
+          padding-left: 42px;
+          position: relative;
+          &:first-child:before{
+            content: 'A.';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+          }
+          &:last-child:before{
+            content: 'E';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+          }
+          &:nth-child(2):before{
+            content: 'T.';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+          }
+          p {
+            max-width: 250px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+          a {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      p.footer__bottom-rights {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+hr{
+  opacity: 0.4;
+}
