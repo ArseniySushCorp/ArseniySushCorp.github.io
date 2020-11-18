@@ -1,0 +1,302 @@
+//import page start
+@import "libs";
+@import "vars";
+@import "fonts";
+@import "header";
+@import "footer";
+//import page end
+.button{
+    cursor: pointer;
+}
+input:focus {
+    border-bottom: 1px solid $purple !important;
+    box-shadow: 0 1px 0 0 $purple !important;
+}
+label.active {
+    color: $purple !important;
+}
+/* label color */
+.input-field label {
+    color: gray;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+.section-title{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+button{
+    background-color: $purple !important;
+}
+
+//about section
+section.about {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/main.jpg") no-repeat;
+    background-size: cover;
+    .about__wrapper {
+        max-width: 470px;
+        position: relative;
+        top: 215px;
+        left: 10%;
+        height: 100000vh;
+        h1.about__title {
+            font-family: Montserrat, sans-serif;
+            font-size: 43px;
+            line-height: 53px;
+            margin: 0 0 39px 0;
+        }
+        p.about__desc {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 49px;
+        }
+        button{
+            position: sticky;
+            top: 20px;
+            z-index: 999;
+        }
+        button.about__call-btn {
+            margin-left: 16px;
+        }
+    }
+}
+//consult section
+section.consult {
+    margin-top: 100vh;
+    .consult__about {
+        h2.consult__title {
+            color: black;
+            padding-top: 100px;
+        }
+        p.consult__desc {
+            color: black;
+            font-size: 19.9753px;
+            line-height: 28px;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto 60px auto;
+        }
+        form.consult__form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 140px;
+            div.input-field{
+                margin-right: 60px;
+            }
+            .input-field input[type=text]:focus {
+                border-bottom: 1px solid #000;
+                box-shadow: 0 1px 0 0 #000;
+            }
+            input.consult__input {
+                padding-right: 30px;
+            }
+            button.consult__submit-btn {
+                transform: translateY(25%);
+            }
+        }
+    }
+}
+//benefits section
+section.benefits {
+    background-color: $purple-dark;
+    height: 120vh;
+    margin-bottom: 124px;
+    h2.benefits__title {
+        padding-top: 130px;
+    }
+    .benefits__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1032px;
+        margin: 0 auto;
+        transform: translateY(-150px);
+        .benefits__item {
+            position: relative;
+            max-width: 400px;
+            padding-left: 77px;
+            height: 150px;
+            &:nth-child(2n){
+                align-self: flex-end;
+            }
+            &:before{
+                color: rgba(255, 255, 255, 0.2);
+                display: inline;
+                font-size: 200px;
+                line-height: 234px;
+                position: relative;
+                top: 160px;
+                left: -75px;
+            }
+            h3.benefits__subtitle {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            p.benefits__desc {
+                font-size: 19px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+.item-01{
+    &:before{
+        content: '01';
+    }
+}
+.item-02{
+    &:before{
+        content: '02';
+    }
+}
+.item-03{
+    &:before{
+        content: '03';
+    }
+}
+.item-04{
+    &:before{
+        content: '04';
+    }
+}
+.item-05{
+    &:before{
+        content: '05';
+    }
+}
+.benefits-animation{
+    transition: 0.1s ease-in-out;
+    animation-name: benefits-from-left;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+.benefits-animation-right{
+    transition: 0.1s ease-in-out;
+    animation-name: benefits-from-right;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes benefits-from-left {
+    0%{
+        left: -100px;
+        color: $purple-dark;
+    }
+    100%{
+        left: 100px;
+        color: white;
+    }
+}
+@keyframes benefits-from-right {
+    0%{
+        right: -100px;
+        color: $purple-dark;
+    }
+    100%{
+        right: 100px;
+        color: white;
+    }
+}
+//prices section
+section.prices {
+    color: black;
+    max-width: 1100px;
+    margin: 0 auto;
+    h2.prices__title {
+        margin-bottom: 46px;
+    }
+    p.prices__desc {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 65px auto;
+    }
+    div.prices__btn-handler{
+        margin: 0 auto;
+        width: 275px;
+    }
+    .prices__wrapper {
+        display: flex;
+        .prices__left {
+            width: 286px;
+            margin-right: 60px;
+            .prices__left-item {
+                h3.prices__left-subtitle {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: right;
+                    margin: 0;
+                }
+                p.prices__left-desc {
+                    font-size: 19px;
+                    line-height: 23px;
+                    text-align: right;
+                    margin-bottom: 74px;
+                }
+            }
+        }
+        .prices__img {
+            img {}
+        }
+        .prices__right {
+            width: 286px;
+            margin-left: 60px;
+            .prices__right-item {
+                h3.prices__right-subtitle {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: left;
+                    margin: 0;
+                }
+                p.prices__right-desc {
+                    font-size: 19px;
+                    line-height: 23px;
+                    text-align: left;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+
+}
+
+//import media
+@import "media.scss";

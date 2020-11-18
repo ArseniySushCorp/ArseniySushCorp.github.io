@@ -1,0 +1,31 @@
+header.header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 1s ease-in-out;
+  div.header__nav {
+    transition: all 1s ease-in-out;
+    padding-top: 75px;
+    ul.header__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 30px 30px 0;
+      li.header__item {
+        margin-right: 35px;
+        a.header__link {
+          color: white;
+          cursor: pointer;
+        }
+      }
+      li.header__item {
+        a.header__link {}
+      }
+      li.header__item {
+        a.header__link {}
+      }
+    }
+  }
+}

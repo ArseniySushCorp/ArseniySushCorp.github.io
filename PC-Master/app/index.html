@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset = 'UTF-8'/>
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'/>
+    <title>Document </title>
+    <link rel = 'stylesheet' href = 'css/style.min.css'/>
+</head>
+<body>
+<header class = 'header'>
+    <div class = 'header__nav'>
+        <ul class = 'header__list'>
+            <li class = 'header__item'><a class = 'header__link'>О НАС</a></li>
+            <li class = 'header__item'><a class = 'header__link'>УСЛУГИ</a></li>
+            <li class = 'header__item'><a class = 'header__link'>КОНТАКТЫ</a></li>
+        </ul>
+    </div>
+</header>
+<main class = 'main'>
+<!--    about section-->
+    <section class = 'about'>
+        <div class = 'about__wrapper'>
+            <h1 class = 'about__title'>Компьютерный мастер</h1>
+            <p class = 'about__desc'>
+                Здравствуйте, меня зовут Владислав, я частный компьютерный мастер.
+                Больше 10 лет я и моя команда оказываем услуги по ремонту компьютеров
+                и ноутбуков на дому по всей Москве
+            </p>
+            <button class = 'about__submit-btn btn-large waves-effect waves-light'>Оставить заявку</button>
+            <button class = 'about__call-btn btn-large waves-effect waves-light'>Позвонить мастеру</button>
+        </div>
+    </section>
+
+<!--    consult section-->
+    <section class='consult'>
+        <div class='consult__about'>
+            <h2 class='consult__title section-title'>
+                Бесплатная консультация
+            </h2>
+            <p class='consult__desc'>
+                Оставьте заявку на онлайн-консультацию
+                и получите обратную связь
+            </p>
+            <form class = 'consult__form'>
+                <div class="input-field inline">
+                    <input id="name_inline" type="email" class="consult__input">
+                    <label for="name_inline">Имя</label>
+                </div>
+                <div class="input-field inline">
+                    <input id="email_inline" type="email" class="consult__input">
+                    <label for="email_inline">Ваш E-mail</label>
+                </div>
+                <div class="input-field inline">
+                    <input id="tel_inline" type="email" class="consult__input">
+                    <label for="tel_inline">Ваш телефон</label>
+                </div>
+                <button class='consult__submit-btn btn-large waves-effect waves-light'>Отправить</button>
+            </form>
+        </div>
+    </section>
+
+<!--    benefits section-->
+    <section class='benefits'>
+        <h2 class='benefits__title section-title'>
+            Проффессионалы работают для Вас
+        </h2>
+        <div class='benefits__wrapper'>
+            <div class='benefits__item item-01 benefits-animation'>
+                <h3 class='benefits__subtitle'>
+                    Выезд на дом
+                </h3>
+                <p class='benefits__desc'>
+                    Зона обслуживания – Москва и Московская Область
+                </p>
+            </div>
+
+            <div class='benefits__item item-02 benefits-animation-right'>
+                <h3 class='benefits__subtitle'>
+                    Часы работы
+                </h3>
+                <p class='benefits__desc'>
+                    Выезд мастера осуществляется ежедневно с 10:00 до 22:00
+                </p>
+            </div>
+
+            <div class='benefits__item item-03 benefits-animation'>
+                <h3 class='benefits__subtitle'>
+                    Бесплатная диагностика
+                </h3>
+                <p class='benefits__desc'>
+                    При продолжении ремонта
+                </p>
+            </div>
+
+            <div class='benefits__item item-04 benefits-animation-right'>
+                <h3 class='benefits__subtitle'>
+                    Выезд от 30 минут
+                </h3>
+                <p class='benefits__desc'>
+                    Бесплатный выезд в пределах МКАД
+                </p>
+            </div>
+
+            <div class='benefits__item item-05 benefits-animation'>
+                <h3 class='benefits__subtitle'>
+                    Гарантия до 1 года
+                </h3>
+                <p class='benefits__desc'>
+                    После ремонта выдаем акт
+                    с гарантией
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!--    prices section-->
+    <section class='prices'>
+        <h2 class='prices__title section-title'>
+            Стоимость услуг
+        </h2>
+        <p class='prices__desc'>
+            Цены указаны на самые популярные услуги. Мы устанавливаем только
+            лицензионное ПО или их бесплатные аналоги,
+            которые не уступают функционалом платного софта.
+        </p>
+        <div class='prices__wrapper'>
+            <div class='prices__left'>
+                <div class='prices__left-item'>
+                    <h3 class='prices__left-subtitle'>
+                        Бесплатно
+                    </h3>
+                    <p class='prices__left-desc'>
+                        Выезд на дом или в офис с диагностикой устройства
+                    </p>
+                </div>
+
+                <div class='prices__left-item'>
+                    <h3 class='prices__left-subtitle'>
+                        900 руб.
+                    </h3>
+                    <p class='prices__left-desc'>
+                        Установка / переустановка ОС Windows 7/8/10
+                    </p>
+                </div>
+
+                <div class='prices__left-item'>
+                    <h3 class='prices__left-subtitle'>
+                        1100 руб.
+                    </h3>
+                    <p class='prices__left-desc'>
+                        Установка / переустановка ОС MacOS, Linux
+                    </p>
+                </div>
+
+                <div class='prices__left-item'>
+                    <h3 class='prices__left-subtitle'>
+                        1500 руб.
+                    </h3>
+                    <p class='prices__left-desc'>
+                        Удаление вирусов + установка антивирусного ПО
+                    </p>
+                </div>
+            </div>
+            <div class='prices__img'>
+                <img src = 'img/price-img.jpg' alt = 'price-img'/>
+            </div>
+            <div class='prices__right'>
+                <div class='prices__right-item'>
+                    <h3 class='prices__right-subtitle'>
+                        600 руб.
+                    </h3>
+                    <p class='prices__right-desc'>
+                        Настройка доступа в интернет или wi-fi роутера
+                    </p>
+                </div>
+
+                <div class='prices__right-item'>
+                    <h3 class='prices__right-subtitle'>
+                        700 руб.
+                    </h3>
+                    <p class='prices__right-desc'>
+                        Настройка периферийного оборудования ( принтер, МФУ и т.д. )
+                    </p>
+                </div>
+
+                <div class='prices__right-item'>
+                    <h3 class='prices__right-subtitle'>
+                        700 руб.
+                    </h3>
+                    <p class='prices__right-desc'>
+                        Настройка родительского контроля ( запрет доступа к сайтам )
+                    </p>
+                </div>
+
+                <div class='prices__right-item'>
+                    <h3 class='prices__right-subtitle'>
+                        1400 руб.
+                    </h3>
+                    <p class='prices__right-desc'>
+                        Покупка и замена комплектующих ( БП, видеокарта, ОЗУ, процессор и т.д. )
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class='prices__btn-handler'>
+            <button class='prices__btn btn-large waves-effect waves-light'>
+                Смотреть полный прайс
+            </button>
+        </div>
+    </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src = 'js/main.js'></script>
+</body>
+</html>
