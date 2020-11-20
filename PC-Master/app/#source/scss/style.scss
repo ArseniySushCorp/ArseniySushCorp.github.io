@@ -248,11 +248,12 @@ section.prices {
         margin: 0 auto 65px auto;
     }
     div.prices__btn-handler{
-        margin: 0 auto;
+        margin: 0 auto 125px auto;
         width: 275px;
     }
     .prices__wrapper {
         display: flex;
+        margin-bottom: 110px;
         .prices__left {
             width: 286px;
             margin-right: 60px;
@@ -291,6 +292,43 @@ section.prices {
                     line-height: 23px;
                     text-align: left;
                     margin-bottom: 60px;
+                }
+            }
+        }
+    }
+
+}
+//section master
+section.master{
+    background-color: $purple-dark;
+    p.master__desc{
+        text-align: center;
+        max-width: 550px;
+        margin: 0 auto;
+        padding-bottom: 110px;
+    }
+    h2.master__title{
+        margin: 0;
+        padding: 72px 0 56px 0;
+    }
+    form.master__form{
+        margin: 0 auto;
+        padding-bottom: 67px;
+        max-width: 595px;
+        button.master__submit-btn{
+            display: block;
+            width: 100%;
+        }
+        div.input-field{
+            input.master__input{
+                padding: 0 18px;
+                color: white;
+                background: $purple-dark;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 5px;
+                &::placeholder{
+                    color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
