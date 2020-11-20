@@ -11,18 +11,18 @@
 <header class = 'header'>
     <div class = 'header__nav'>
         <ul class = 'header__list'>
-            <li class = 'header__item'><a href='#benefits' class = 'header__link'>О НАС</a></li>
-            <li class = 'header__item'><a href='#prices' class = 'header__link'>УСЛУГИ</a></li>
-            <li class = 'header__item'><a href='#contacts' class = 'header__link'>КОНТАКТЫ</a></li>
+            <li class = 'header__item'><a href='#benefits' class = 'nav__link'>О НАС</a></li>
+            <li class = 'header__item'><a href='#prices' class = 'nav__link'>УСЛУГИ</a></li>
+            <li class = 'header__item'><a href='#contacts' class = 'nav__link'>КОНТАКТЫ</a></li>
             <li class='burger'><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons medium">menu</i></a></li>
         </ul>
     </div>
 </header>
 <!--sidenav-->
 <ul id="slide-out" class="sidenav">
-    <li class = 'slide__item'><a class='slide__link' href='#benefits'>О НАС</a></li>
-    <li class = 'slide__item'><a class='slide__link' href='#prices'>УСЛУГИ</a></li>
-    <li class = 'slide__item'><a class='slide__link' href='#contacts'>КОНТАКТЫ</a></li>
+    <li class = 'slide__item'><a class='nav__link' href='#benefits'>О НАС</a></li>
+    <li class = 'slide__item'><a class='nav__link' href='#prices'>УСЛУГИ</a></li>
+    <li class = 'slide__item'><a class='nav__link' href='#contacts'>КОНТАКТЫ</a></li>
 </ul>
 
 <main class = 'main'>
@@ -35,8 +35,10 @@
                 Больше 10 лет я и моя команда оказываем услуги по ремонту компьютеров
                 и ноутбуков на дому по всей Москве
             </p>
-            <button class = 'about__submit-btn btn-large waves-effect waves-light'>Позвонить мастеру</button>
-            <button class = 'about__call-btn btn-large waves-effect waves-light'>Оставить заявку</button>
+            <div class='about__buttons'>
+                <button class = 'about__submit-btn btn-large waves-effect waves-light'>Позвонить мастеру</button>
+                <button class = 'about__call-btn btn-large waves-effect waves-light'>Оставить заявку</button>
+            </div>
         </div>
     </section>
 

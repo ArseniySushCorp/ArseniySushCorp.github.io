@@ -87,13 +87,14 @@ section.about {
             line-height: 25px;
             margin-bottom: 49px;
         }
-        button{
+        .about__buttons{
+            display: block;
             position: sticky;
             top: 20px;
             z-index: 999;
-        }
-        button.about__call-btn {
-            margin-left: 16px;
+            button.about__call-btn {
+                margin-left: 16px;
+            }
         }
     }
 }
@@ -372,7 +373,10 @@ ul#slide-out.sidenav {
     z-index: 10000;
     background-color: $purple-dark;
     li.slide__item {
-        a.slide__link {
+        &:first-child{
+            margin-top: 100px;
+        }
+        a.nav__link {
             text-align: center;
             color: white;
         }

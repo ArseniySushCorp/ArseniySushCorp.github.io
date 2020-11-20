@@ -57,7 +57,7 @@
   header.header div.header__nav ul.header__list li.header__item{
     display: none;
   }
-  section.about .about__wrapper button{
+  section.about .about__wrapper .about__buttons{
     top: 40px;
   }
 }
@@ -165,7 +165,7 @@
   header.header div.header__nav ul.header__list{
     margin: 0 15px 15px 0;
   }
-  section.about .about__wrapper button{
+  section.about .about__wrapper .about__buttons{
     top: 33px;
   }
   section.about .about__wrapper h1.about__title{

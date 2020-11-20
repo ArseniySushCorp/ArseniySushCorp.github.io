@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let instances = M.Sidenav.init(elem)
 	let instance = M.Sidenav.getInstance(elem)
 	sidenav.addEventListener('click', (event) => {
-		if (event.target.classList.contains('slide__link')){
+		if (event.target.classList.contains('nav__link')){
 			instance.close();
 		}
 	})
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	};
 
 	const scrollTo = function () {
-		const links = document.querySelectorAll('.slide__link');
+		const links = document.querySelectorAll('.nav__link');
 		links.forEach(each => {
 			each.addEventListener('click', function () {
 				const currentTarget = this.getAttribute('href');
