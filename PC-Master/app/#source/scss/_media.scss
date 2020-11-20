@@ -1,0 +1,281 @@
+@import "vars";
+@media screen and (max-width: 1024px) {
+  @keyframes benefits-from-left {
+    0%{
+      left: 0;
+      color: $purple-dark;
+    }
+    100%{
+      left: 50px;
+      color: white;
+    }
+  }
+  @keyframes benefits-from-right {
+    0%{
+      right: 0;
+      color: $purple-dark;
+    }
+    100%{
+      right: 50px;
+      color: white;
+    }
+  }
+  .prices__img img{
+    max-width: 300px;
+  }
+  section.prices .prices__wrapper .prices__left{
+    margin-right: 30px;
+    max-width: 200px;
+    .prices__left-item p.prices__left-desc{
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+  }
+  section.prices .prices__wrapper .prices__right{
+    margin-left: 30px;
+    max-width: 200px;
+    .prices__right-item p.prices__right-desc{
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+  }
+  section.prices .prices__wrapper{
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  section.prices div.prices__btn-handler{
+    margin-bottom: 60px;
+  }
+  section.contacts .contacts__wrapper{
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+
+  header.header div.header__nav ul.header__list li.burger{
+    display: block;
+  }
+  header.header div.header__nav ul.header__list li.header__item{
+    display: none;
+  }
+  section.about .about__wrapper button{
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.about .about__wrapper button.about__call-btn{
+    margin-left: 30px;
+  }
+  section.consult .consult__about form.consult__form{
+    margin: 0 auto;
+    max-width: 350px;
+    flex-direction: column;
+  }
+  section.consult .consult__about form.consult__form input.consult__input{
+    padding-right: 0;
+  }
+  section.consult .consult__about form.consult__form div.input-field{
+    margin-right: 0;
+  }
+  section.consult .consult__about form.consult__form button.consult__submit-btn{
+    margin-bottom: 40px;
+  }
+  section.consult .consult__about p.consult__desc{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .section-title{
+    font-size: 30px;
+  }
+  section.benefits .benefits__wrapper .benefits__item h3.benefits__subtitle{
+    font-size: 18px;
+  }
+  section.benefits .benefits__wrapper .benefits__item p.benefits__desc{
+    font-size: 14px;
+  }
+  section.benefits .benefits__wrapper .benefits__item{
+    max-width: 300px;
+    &:before{
+      font-size: 125px;
+    }
+  }
+  section.benefits{
+    margin-bottom: 60px;
+  }
+  .prices__img img{
+    display: none;
+  }
+  section.master form.master__form{
+    padding: 0 50px 50px 50px;
+  }
+  .contacts__img img{
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+  section.contacts .contacts__wrapper .contacts__info h4.contacts__title{
+    text-align: center;
+  }
+  footer.footer .footer__wrapper{
+    margin-left: 15px;
+  }
+  section.about .about__wrapper button.about__call-btn{
+    margin: 15px 0 0 0;
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  section.about .about__wrapper{
+    margin-left: 4%;
+    max-width: 400px;
+    button.about__call-btn{
+      display: none;
+    }
+  }
+  .section.about{
+    background-position: left;
+  }
+  section.benefits{
+    height: 110vh;
+    h2.benefits__title{
+      padding-top: 50px;
+      font-size: 24px;
+    }
+    .benefits__wrapper{
+      transform: translateY(-200px);
+    }
+  }
+  section.prices .prices__wrapper .prices__left{
+    margin-right: 20px;
+  }
+  section.prices .prices__wrapper .prices__right{
+    margin-left: 20px;
+  }
+  section.master{
+    h2.master__title{
+      font-size: 24px;
+    }
+  }
+  section.master p.master__desc{
+    max-width: 400px;
+  }
+  header.header div.header__nav ul.header__list{
+    margin: 0 15px 15px 0;
+  }
+  section.about .about__wrapper button{
+    top: 33px;
+  }
+  section.about .about__wrapper h1.about__title{
+    font-size: 37px;
+    line-height: 43px;
+  }
+  section.about .about__wrapper p.about__desc{
+  font-size: 13px;
+  line-height: 22px;
+  }
+  //section.about .about__wrapper h1.about__title{
+  //  font-size: 33px;
+  //  line-height: 43px;
+  //}
+  //section.about .about__wrapper p.about__desc{
+  //  font-size: 14px;
+  //  line-height: 20px;
+  //}
+}
+@media screen and (max-width: 425px){
+  section.about .about__wrapper{
+    margin-left: 2%;
+    max-width: 300px;
+  }
+  section.consult .consult__about h2.consult__title{
+    padding-top: 50px;
+  }
+  .section-title{
+    font-size: 24px;
+  }
+  section.consult .consult__about p.consult__desc{
+    line-height: 20px;
+  }
+  //section.benefits{
+  //  margin-bottom: 30px;
+  //  .benefits__wrapper .benefits__item{
+  //    align-self: center !important;
+  //  }
+  //}
+  section.prices h2.prices__title{
+    margin-bottom: 23px;
+  }
+  section.prices p.prices__desc{
+    padding: 0 15px;
+  }
+  section.contacts .contacts__wrapper .contacts__info ul.contacts__list li.contacts__item{
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  footer.footer .footer__wrapper p.footer__desc{
+    font-size: 10px;
+  }
+  .contacts__img img{
+    max-width: 300px;
+  }
+  section.prices .prices__wrapper{
+    flex-direction: column;
+    align-items: center;
+    .prices__left {
+      margin: 0;
+      .prices__left-item{
+        p.prices__left-desc{
+          text-align: center;
+        }
+        h3.prices__left-subtitle{
+          text-align: center;
+        }
+    }
+    }
+    .prices__right{
+      margin: 0;
+      .prices__right-item{
+        p.prices__right-desc{
+          text-align: center;
+        }
+        h3.prices__right-subtitle{
+          text-align: center;
+        }
+      }
+    }
+
+    section.benefits .benefits__wrapper .benefits__item{
+      align-self: flex-start !important;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  section.master h2.master__title{
+    font-size: 21px;
+  }
+
+  @keyframes benefits-from-left {
+    0%{
+      left: 0;
+      color: $purple-dark;
+    }
+    100%{
+      left: 0;
+      color: white;
+    }
+  }
+  @keyframes benefits-from-right {
+    0%{
+      right: 0;
+      color: $purple-dark;
+    }
+    100%{
+      right: 0;
+      color: white;
+    }
+  }
+}

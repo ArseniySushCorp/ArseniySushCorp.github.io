@@ -3,6 +3,8 @@ const aboutSection = document.querySelector('.about')
 const headerNav = document.querySelector('.header__nav')
 const benefitsSection = document.querySelector('.benefits')
 const benefitsItem = document.querySelectorAll('.benefits__item')
+const sidenav = document.querySelector('.sidenav')
+
 
 document.addEventListener('scroll', () => {
 	if (window.scrollY >= aboutSection.clientHeight/2) {
@@ -24,3 +26,14 @@ document.addEventListener('scroll', () => {
 		})
 	}
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+	let elem = document.querySelector('.sidenav')
+	let instances = M.Sidenav.init(elem)
+	let instance = M.Sidenav.getInstance(elem)
+	sidenav.addEventListener('click', (event) => {
+		if (event.target.classList.contains('slide__link')){
+			instance.close();
+		}
+	})
+});

@@ -74,7 +74,7 @@ section.about {
         max-width: 470px;
         position: relative;
         top: 215px;
-        left: 10%;
+        margin-left: 10%;
         height: 4200px;
         h1.about__title {
             font-family: Montserrat, sans-serif;
@@ -368,5 +368,22 @@ section.contacts {
         }
     }
 }
+ul#slide-out.sidenav {
+    z-index: 10000;
+    background-color: $purple-dark;
+    li.slide__item {
+        a.slide__link {
+            text-align: center;
+            color: white;
+        }
+    }
+    li.slide__item {
+        a.slide__link {}
+    }
+    li.slide__item {
+        a.slide__link {}
+    }
+}
+
 //import media
 @import "media.scss";
