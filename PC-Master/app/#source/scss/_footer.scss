@@ -1,0 +1,25 @@
+footer.footer {
+  width: 100%;
+  background-color: $purple-dark;
+  .footer__wrapper{
+    margin-left: 150px;
+    h4.footer__title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F5F5F5;
+      padding: 30px 0 15px 0;
+    }
+    p.footer__desc {
+      margin: 0;
+      color: #A9A9A9;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: left;
+      padding-bottom: 15px;
+      a.footer__link {
+        color: #A9A9A9;
+      }
+    }
+  }
+}
