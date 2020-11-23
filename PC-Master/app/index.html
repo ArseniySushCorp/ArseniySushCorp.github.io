@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang = 'ru'>
 <head>
     <meta charset = 'UTF-8'/>
     <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'/>
@@ -54,18 +54,18 @@
             </p>
             <form class = 'consult__form'>
                 <div class="input-field inline">
-                    <input id="name_inline" type="email" class="consult__input">
+                    <input id="name_inline" type="text" class="consult__input validate" required>
                     <label for="name_inline">Имя</label>
                 </div>
                 <div class="input-field inline">
-                    <input id="email_inline" type="email" class="consult__input">
+                    <input id="email_inline" type="email" class="consult__input validate" required>
                     <label for="email_inline">Ваш E-mail</label>
                 </div>
                 <div class="input-field inline">
-                    <input id="tel_inline" type="email" class="consult__input">
+                    <input id="tel_inline" type="tel" class="consult__input validate" required>
                     <label for="tel_inline">Ваш телефон</label>
                 </div>
-                <button class='consult__submit-btn btn-large waves-effect waves-light'>Отправить</button>
+                <button type='submit' class='consult__submit-btn btn-large waves-effect waves-light'>Отправить</button>
             </form>
         </div>
     </section>
@@ -173,7 +173,7 @@
                 </div>
             </div>
             <div class='prices__img'>
-                <img src = 'img/price-img.jpg' alt = 'price-img'/>
+                <img src = 'img/price-img.jpg' alt = 'price'/>
             </div>
             <div class='prices__right'>
                 <div class='prices__right-item'>
@@ -227,15 +227,15 @@
         </h2>
         <form class = 'master__form'>
             <div class="input-field">
-                <input id="master_name" type="email" class="master__input" placeholder='Имя'>
+                <input id="master_name" type="text" class="master__input validate" name='name' placeholder='Имя' required>
             </div>
             <div class="input-field">
-                <input id="master_email" type="email" class="master__input" placeholder='Ваш E-mail'>
+                <input id="master_email" type="email" class="master__input validate" name='email' placeholder='Ваш E-mail' required>
             </div>
             <div class="input-field">
-                <input id="master_tel" type="email" class="master__input" placeholder='+7 (999) 999-99-99'>
+                <input id="master_tel" type="tel" class="master__input validate" name='tel' placeholder='+7 (999) 999-99-99' required>
             </div>
-            <button class='master__submit-btn btn-large waves-effect waves-light'>Записаться</button>
+            <button type='submit' class='master__submit-btn btn-large waves-effect waves-light'>Записаться</button>
         </form>
 
         <p class='master__desc'>
@@ -264,7 +264,7 @@
                 </ul>
             </div>
             <div class='contacts__img'>
-                <img src = './img/contacts-img.jpg' alt = 'contacts-img'/>
+                <img src = './img/contacts-img.jpg' alt = 'contacts'/>
             </div>
         </div>
     </section>
@@ -282,6 +282,7 @@
         </p>
     </div>
 </footer>
+<script src='js/inputmask.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src = 'js/main.js'></script>
 </body>

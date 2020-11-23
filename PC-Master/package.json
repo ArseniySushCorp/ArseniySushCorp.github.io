@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "inputmask": "^5.0.5",
     "materialize-css": "^1.0.0-rc.2",
     "slick-carousel": "^1.8.1",
     "stickyfilljs": "^2.1.0"
