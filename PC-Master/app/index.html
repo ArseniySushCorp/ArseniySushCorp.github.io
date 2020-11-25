@@ -3,7 +3,7 @@
 <head>
     <meta charset = 'UTF-8'/>
     <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'/>
-    <title>Document </title>
+    <title>Компьютерный мастер | Москва</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel = 'stylesheet' href = 'css/style.min.css'/>
 </head>
@@ -24,8 +24,18 @@
     <li class = 'slide__item'><a class='nav__link' href='#prices'>УСЛУГИ</a></li>
     <li class = 'slide__item'><a class='nav__link' href='#contacts'>КОНТАКТЫ</a></li>
 </ul>
-
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Спасибо за заявку!</h4>
+        <p>Наш менеджер свяжется с вами в течении 15 минут!</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+    </div>
+</div>
 <main class = 'main'>
+
 <!--    about section-->
     <section class = 'about'>
         <div class = 'about__wrapper'>
@@ -214,9 +224,9 @@
             </div>
         </div>
         <div class='prices__btn-handler'>
-            <button class='prices__btn btn-large waves-effect waves-light'>
+            <a href='prices.html' class='prices__btn btn-large waves-effect waves-light'>
                 Смотреть полный прайс
-            </button>
+            </a>
         </div>
     </section>
 
@@ -225,7 +235,7 @@
         <h2 class='master__title section-title'>
             Оставить заявку на визит мастера
         </h2>
-        <form action='send.php' method='post' class = 'master__form'>
+        <form class = 'master__form'>
             <div class="input-field">
                 <input id="master_name" type="text" class="master__input validate" name='name' placeholder='Имя' required>
             </div>

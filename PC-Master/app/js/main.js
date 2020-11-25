@@ -4,7 +4,9 @@ const headerNav = document.querySelector('.header__nav')
 const benefitsSection = document.querySelector('.benefits')
 const benefitsItem = document.querySelectorAll('.benefits__item')
 const sidenav = document.querySelector('.sidenav')
-
+const consultForm = document.querySelector('.consult__form')
+const masterForm = document.querySelector('.master__form')
+const modal = document.querySelector('.modal')
 
 document.addEventListener('scroll', () => {
 	if (window.scrollY >= aboutSection.clientHeight / 2) {
@@ -28,12 +30,11 @@ document.addEventListener('scroll', () => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-	let elem = document.querySelector('.sidenav')
-	let instances = M.Sidenav.init(elem)
-	let instance = M.Sidenav.getInstance(elem)
+	M.Sidenav.init(sidenav)
+	const sidenavInstance = M.Sidenav.getInstance(sidenav)
 	sidenav.addEventListener('click', (event) => {
 		if (event.target.classList.contains('nav__link')) {
-			instance.close()
+			sidenavInstance.close()
 		}
 	})
 });
@@ -80,3 +81,31 @@ let selector = document.querySelectorAll('input[type="tel"]')
 let im = new Inputmask('+7(999)999-99-99')
 im.mask(selector)
 
+consultForm.addEventListener('submit', (event) => {
+	telegramSend(event, '.consult__input')
+})
+
+masterForm.addEventListener('submit', (event) => {
+	telegramSend(event, '.master__input')
+})
+
+function telegramSend(event, inputClass) {
+	event.preventDefault()
+	M.Modal.init(modal)
+	const modalInstance = M.Modal.getInstance(modal)
+	const token = "";
+	const chat_id = "";
+	const inputs = document.querySelectorAll(inputClass)
+	let txt = []
+	inputs.forEach( element => {
+		txt.push(element.value)
+	})
+	const str = txt.join(' ')
+	const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${str}`
+	try {
+		fetch(url)
+		modalInstance.open()
+	} catch (e) {
+		console.log(e)
+	}
+}

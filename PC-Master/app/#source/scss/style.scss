@@ -5,8 +5,12 @@
 @import "header";
 @import "footer";
 //import page end
-.button{
+.modal{
+    color: black;
+}
+button{
     cursor: pointer;
+    background-color: $purple !important;
 }
 input:focus {
     border-bottom: 1px solid $purple !important;
@@ -57,9 +61,7 @@ body {
     font-weight: normal;
     color: white;
 }
-button{
-    background-color: $purple !important;
-}
+
 
 //about section
 section.about {
@@ -301,7 +303,9 @@ section.prices {
             }
         }
     }
-
+}
+.prices__btn{
+    background-color: $purple !important;
 }
 //section master
 section.master{
@@ -388,6 +392,68 @@ ul#slide-out.sidenav {
     }
     li.slide__item {
         a.slide__link {}
+    }
+}
+
+//prices page
+header.prices-header {
+    nav.prices-nav {
+        background-color: $purple-dark !important;
+        .container.nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .nav-link{
+                margin-right: 15px;
+            }
+            button {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+
+main.prices__main {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    .container {
+        h1.main__title {
+            font-family: Montserrat, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .main__desc {}
+        section.main__section {
+            h3.section__title {
+                font-family: Montserrat, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+            }
+            .section__desc {
+                margin-bottom: 20px;
+                max-width: 1000px;
+            }
+            .section__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:nth-child(2n-1){
+                    background-color: $grey;
+                }
+                p.row__desc {
+                    margin-left: 20px;
+                }
+                div.row__price {
+                    color: $blue;
+                    margin-right: 20px;
+                    width: 70px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
