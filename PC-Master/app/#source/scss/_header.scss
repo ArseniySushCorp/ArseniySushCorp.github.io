@@ -22,12 +22,32 @@ header.header {
       li.header__item {
         margin-right: 35px;
         a.nav__link {
+          position: relative;
           color: white;
           cursor: pointer;
+          transition: all 0.7s;
+          &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            background: white;
+            transition: all 0.4s;
+          }
+          &:hover {
+            &:before {
+              width: 100%;
+              left: 0;
+              background: white;
+            }
+          }
         }
       }
       li.header__item {
-        a.header__link {}
+        a.header__link {
+        }
       }
       li.header__item {
         a.header__link {}

@@ -8,17 +8,41 @@ const consultForm = document.querySelector('.consult__form')
 const masterForm = document.querySelector('.master__form')
 const thanksModal = document.querySelector('.thanks-modal')
 const politicModal = document.querySelector('.politic-modal')
+const callBtn = document.querySelector('.about__submit-btn')
+const mediaQuery = window.matchMedia('(max-width: 560px)')
+
+function handleTabletChange(event) {
+	if (event.matches) {
+		callBtn.classList.remove('btn-large')
+		callBtn.classList.add('btn')
+	} else {
+		callBtn.classList.add('btn-large')
+		callBtn.classList.remove('btn')
+	}
+}
+mediaQuery.addListener(handleTabletChange)
+handleTabletChange(mediaQuery)
 
 document.addEventListener('scroll', () => {
 	if (window.scrollY >= aboutSection.clientHeight / 2) {
 		header.style.backgroundColor = '#250E48'
-		headerNav.style.paddingTop = '35px'
+		if (aboutSection.clientWidth > 425) {
+			headerNav.style.paddingTop = '35px'
+		} else {
+			headerNav.style.paddingTop = '20px'
+			callBtn.style.left = '10px'
+		}
 	} else {
 		header.style.backgroundColor = 'transparent'
-		headerNav.style.paddingTop = '75px'
+		if (aboutSection.clientWidth > 425) {
+			headerNav.style.paddingTop = '75px'
+		} else {
+			headerNav.style.paddingTop = '50px'
+			callBtn.style.left = '43px'
+		}
 	}
 
-	if (window.scrollY >= benefitsSection.clientHeight) {
+	if (window.scrollY >= benefitsSection.clientHeight*2) {
 		benefitsItem.forEach((item, i) => {
 			if (i % 2 === 0) {
 				item.classList.add('benefits-animation')

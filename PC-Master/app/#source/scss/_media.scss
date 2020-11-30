@@ -58,7 +58,7 @@
     display: none;
   }
   section.about .about__wrapper .about__buttons{
-    top: 40px;
+    top: 25px;
   }
 }
 
@@ -121,6 +121,24 @@
 }
 
 @media screen and (max-width: 560px) {
+  .about__buttons a, .about__link{
+    left: 43px;
+  }
+  section.consult {
+    padding: 0 15px;
+    .consult__about{
+      padding: 0 50px 50px 50px;
+    }
+  }
+  section.about .about__wrapper ul.about__list li.about__item{
+    padding-left: 43px;
+  }
+  section.about .about__wrapper{
+    top: 100px;
+  }
+  .about__submit-btn{
+    top: 10px;
+  }
   section.about .about__wrapper{
     margin-left: 4%;
     max-width: 400px;
@@ -159,7 +177,7 @@
     margin: 0 15px 15px 0;
   }
   section.about .about__wrapper .about__buttons{
-    top: 33px;
+    top: 15px;
   }
   section.about .about__wrapper h1.about__title{
     font-size: 37px;
@@ -171,9 +189,25 @@
   }
 }
 @media screen and (max-width: 425px){
+  section.consult {
+    margin-bottom: 30px;
+    .consult__about{
+      margin: 20px auto 0 auto;
+      border: none;
+      padding: 0 20px 20px 20px;
+    }
+  }
+  .about__submit-btn{
+    top: 3px;
+  }
   section.about .about__wrapper{
-    margin-left: 2%;
-    max-width: 300px;
+
+    padding-left: 3px;
+    max-width: 370px;
+    ul.about__list{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
   }
   section.consult .consult__about h2.consult__title{
     padding-top: 50px;

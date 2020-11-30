@@ -4,10 +4,10 @@
     <meta charset = 'UTF-8'/>
     <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'/>
     <title>Компьютерный мастер | Москва</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
+    <link rel = 'apple-touch-icon' sizes = '180x180' href = 'img/apple-touch-icon.png'>
+    <link rel = 'icon' type = 'image/png' sizes = '32x32' href = 'img/favicon-32x32.png'>
+    <link rel = 'icon' type = 'image/png' sizes = '16x16' href = 'img/favicon-16x16.png'>
+    <link rel = 'manifest' href = 'img/site.webmanifest'>
     <link href = 'https://fonts.googleapis.com/icon?family=Material+Icons' rel = 'stylesheet'>
     <link rel = 'stylesheet' href = 'css/style.min.css'/>
 </head>
@@ -16,17 +16,20 @@
     <div class = 'header__nav'>
         <ul class = 'header__list'>
             <li class = 'header__item'><a href = '#benefits' class = 'nav__link link'>О НАС</a></li>
-            <li class = 'header__item'><a href = '#prices' class = 'nav__link link'>УСЛУГИ</a></li>
+            <li class = 'header__item'><a href = '#prices' class = 'nav__link link'>ЦЕНЫ</a></li>
             <li class = 'header__item'><a href = '#contacts' class = 'nav__link link'>КОНТАКТЫ</a></li>
-            <li class = 'burger'><a href = '#' data-target = 'slide-out' class = 'sidenav-trigger'><i
-                    class = 'material-icons medium'>menu</i></a></li>
+            <li class = 'burger'>
+                <a href = '#' data-target = 'slide-out' class = 'sidenav-trigger'>
+                    <i class = 'material-icons small'>menu</i>
+                </a>
+            </li>
         </ul>
     </div>
 </header>
 <!--sidenav-->
 <ul id = 'slide-out' class = 'sidenav'>
     <li class = 'slide__item'><a class = 'nav__link link' href = '#benefits'>О НАС</a></li>
-    <li class = 'slide__item'><a class = 'nav__link link' href = '#prices'>УСЛУГИ</a></li>
+    <li class = 'slide__item'><a class = 'nav__link link' href = '#prices'>ЦЕНЫ</a></li>
     <li class = 'slide__item'><a class = 'nav__link link' href = '#contacts'>КОНТАКТЫ</a></li>
 </ul>
 
@@ -35,102 +38,74 @@
     <!--    about section-->
     <section class = 'about'>
         <div class = 'about__wrapper'>
-            <h1 class = 'about__title'>Компьютерный мастер</h1>
-            <p class = 'about__desc'>
-                Здравствуйте, меня зовут Владислав, я частный компьютерный мастер.
-                Больше 10 лет я и моя команда оказываем услуги по ремонту компьютеров
-                и ноутбуков на дому по всей Москве
-            </p>
-            <div class = 'about__buttons'>
-                <a href = 'tel:+79818560789' class = 'about__submit-btn btn-large waves-effect waves-light'>Позвонить
-                    мастеру</a>
-                <a href = '#master' class = 'about__call-btn link btn-large waves-effect waves-light'>Оставить
-                    заявку</a>
-            </div>
-        </div>
-    </section>
-
-    <!--    consult section-->
-    <section class = 'consult'>
-        <div class = 'consult__about'>
-            <h2 class = 'consult__title section-title'>
-                Бесплатная консультация
-            </h2>
-            <p class = 'consult__desc'>
-                Оставьте заявку на онлайн-консультацию
-                и получите обратную связь!
-            </p>
-            <form class = 'consult__form'>
-                <div class = 'input-field inline'>
-                    <input id = 'name_inline' type = 'text' class = 'consult__input validate' required>
-                    <label for = 'name_inline'>Имя</label>
-                </div>
-                <div class = 'input-field inline'>
-                    <input id = 'email_inline' type = 'email' class = 'consult__input validate' required>
-                    <label for = 'email_inline'>Ваш E-mail</label>
-                </div>
-                <div class = 'input-field inline'>
-                    <input id = 'tel_inline' type = 'tel' class = 'consult__input validate' required>
-                    <label for = 'tel_inline'>Ваш телефон</label>
-                </div>
-                <button type = 'submit' class = 'consult__submit-btn btn-large waves-effect waves-light'>Отправить
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!--    benefits section-->
-    <section id = 'benefits' class = 'benefits'>
-        <h2 class = 'benefits__title section-title'>
-            Проффессионалы работают для Вас
-        </h2>
-        <div class = 'benefits__wrapper'>
-            <div class = 'benefits__item item-01'>
-                <h3 class = 'benefits__subtitle'>
-                    Выезд на дом
-                </h3>
-                <p class = 'benefits__desc'>
-                    Зона обслуживания – Москва и Московская Область
-                </p>
-            </div>
-
-            <div class = 'benefits__item item-02'>
-                <h3 class = 'benefits__subtitle'>
+            <h1 class = 'about__title'>Ремонт компьютеров в Москве</h1>
+            <ul class = 'about__list'>
+                <li class = 'about__item-title'>
+                    <i class = 'material-icons left small'>assignment_turned_in</i>
+                    Гарантия качества
+                </li>
+                <li class = 'about__item'>
+                    Гарантия на все виды работ от 1 года до 5 лет
+                </li>
+                <li class = 'about__item-title'>
+                    <i class = 'material-icons left small'>settings</i>
+                    Ремонт и замена любых деталей
+                </li>
+                <li class = 'about__item'>
+                    Устанавливаем только оригинальные комплектующие
+                </li>
+                <li class = 'about__item-title'>
+                    <i class = 'material-icons left small'>history</i>
                     Часы работы
-                </h3>
-                <p class = 'benefits__desc'>
-                    Выезд мастера осуществляется ежедневно с 10:00 до 22:00
-                </p>
-            </div>
-
-            <div class = 'benefits__item item-03'>
-                <h3 class = 'benefits__subtitle'>
-                    Бесплатная диагностика
-                </h3>
-                <p class = 'benefits__desc'>
-                    При продолжении ремонта
-                </p>
-            </div>
-
-            <div class = 'benefits__item item-04'>
-                <h3 class = 'benefits__subtitle'>
-                    Выезд от 30 минут
-                </h3>
-                <p class = 'benefits__desc'>
-                    Бесплатный выезд в пределах МКАД
-                </p>
-            </div>
-
-            <div class = 'benefits__item item-05'>
-                <h3 class = 'benefits__subtitle'>
-                    Гарантия до 1 года
-                </h3>
-                <p class = 'benefits__desc'>
-                    После ремонта выдаем акт
-                    с гарантией
-                </p>
+                </li>
+                <li class = 'about__item'>
+                    Выезд мастера осуществляется ежедневно с 9:00 до 23:00
+                </li>
+                <li class = 'about__item-title'>
+                    <i class = 'material-icons left small'>home</i>
+                    Ремонт в сервисе и на дому
+                </li>
+                <li class = 'about__item'>
+                    Производим ремонт как в сервисном центре и на дому
+                </li>
+            </ul>
+            <div class = 'about__buttons'>
+                <a
+                        href = 'tel:+79818560789'
+                        class = 'about__submit-btn btn-large waves-effect waves-light'
+                >
+                    Позвонить мастеру
+                </a>
+                <a
+                        href = '#master'
+                        class = 'about__call-btn link btn-large waves-effect waves-light'
+                >
+                    Оставить заявку
+                </a>
             </div>
         </div>
+    </section>
+
+    <!--    master section-->
+    <section id = 'master' class = 'master'>
+        <h2 class = 'master__title section-title'>
+            Оставить заявку на визит мастера
+        </h2>
+        <form class = 'master__form'>
+            <div class = 'input-field'>
+                <input id = 'master_name' type = 'text' class = 'master__input validate' name = 'name'
+                       placeholder = 'Имя' required>
+            </div>
+            <div class = 'input-field'>
+                <input id = 'master_tel' type = 'tel' class = 'master__input validate' name = 'tel'
+                       placeholder = '+7 (999) 999-99-99' required>
+            </div>
+            <button type = 'submit' class = 'master__submit-btn btn-large waves-effect waves-light'>Записаться</button>
+        </form>
+
+        <p class = 'master__desc'>
+            Наш менеджер свяжется с Вами в течение 15 минут после отправки формы!
+        </p>
     </section>
 
     <!--    prices section-->
@@ -156,7 +131,7 @@
 
                 <div class = 'prices__left-item'>
                     <h3 class = 'prices__left-subtitle'>
-                        900 руб.
+                        от 200 руб.
                     </h3>
                     <p class = 'prices__left-desc'>
                         Установка / переустановка ОС Windows 7/8/10
@@ -165,7 +140,7 @@
 
                 <div class = 'prices__left-item'>
                     <h3 class = 'prices__left-subtitle'>
-                        1100 руб.
+                        от 300 руб.
                     </h3>
                     <p class = 'prices__left-desc'>
                         Установка / переустановка ОС MacOS, Linux
@@ -174,7 +149,7 @@
 
                 <div class = 'prices__left-item'>
                     <h3 class = 'prices__left-subtitle'>
-                        1500 руб.
+                        от 150 руб.
                     </h3>
                     <p class = 'prices__left-desc'>
                         Удаление вирусов + установка антивирусного ПО
@@ -187,7 +162,7 @@
             <div class = 'prices__right'>
                 <div class = 'prices__right-item'>
                     <h3 class = 'prices__right-subtitle'>
-                        600 руб.
+                        от 400 руб.
                     </h3>
                     <p class = 'prices__right-desc'>
                         Настройка доступа в интернет или wi-fi роутера
@@ -196,7 +171,7 @@
 
                 <div class = 'prices__right-item'>
                     <h3 class = 'prices__right-subtitle'>
-                        700 руб.
+                        от 500 руб.
                     </h3>
                     <p class = 'prices__right-desc'>
                         Настройка периферийного оборудования ( принтер, МФУ и т.д. )
@@ -205,7 +180,7 @@
 
                 <div class = 'prices__right-item'>
                     <h3 class = 'prices__right-subtitle'>
-                        700 руб.
+                        150 руб.
                     </h3>
                     <p class = 'prices__right-desc'>
                         Настройка родительского контроля ( запрет доступа к сайтам )
@@ -214,7 +189,7 @@
 
                 <div class = 'prices__right-item'>
                     <h3 class = 'prices__right-subtitle'>
-                        1400 руб.
+                        500 руб.
                     </h3>
                     <p class = 'prices__right-desc'>
                         Покупка и замена комплектующих ( БП, видеокарта, ОЗУ, процессор и т.д. )
@@ -229,36 +204,94 @@
         </div>
     </section>
 
-    <!--    master section-->
-    <section id = 'master' class = 'master'>
-        <h2 class = 'master__title section-title'>
-            Оставить заявку на визит мастера
+    <!--    benefits section-->
+    <section id = 'benefits' class = 'benefits'>
+        <h2 class = 'benefits__title section-title'>
+            Этапы работы
         </h2>
-        <form class = 'master__form'>
-            <div class = 'input-field'>
-                <input id = 'master_name' type = 'text' class = 'master__input validate' name = 'name'
-                       placeholder = 'Имя' required>
+        <div class = 'benefits__wrapper'>
+            <div class = 'benefits__item item-01'>
+                <h3 class = 'benefits__subtitle'>
+                    Заявка
+                </h3>
+                <p class = 'benefits__desc'>
+                    Оставляете заявку на сайте или звоните по телефону
+                </p>
             </div>
-            <div class = 'input-field'>
-                <input id = 'master_email' type = 'email' class = 'master__input validate' name = 'email'
-                       placeholder = 'Ваш E-mail' required>
-            </div>
-            <div class = 'input-field'>
-                <input id = 'master_tel' type = 'tel' class = 'master__input validate' name = 'tel'
-                       placeholder = '+7 (999) 999-99-99' required>
-            </div>
-            <button type = 'submit' class = 'master__submit-btn btn-large waves-effect waves-light'>Записаться</button>
-        </form>
 
-        <p class = 'master__desc'>
-            Наш менеджер свяжется с Вами в течение 15 минут после отправки формы
-        </p>
+            <div class = 'benefits__item item-02'>
+                <h3 class = 'benefits__subtitle'>
+                    Выезд от 30 минут
+                </h3>
+                <p class = 'benefits__desc'>
+                    Бесплатный выезд мастера на дом в пределах МКАД
+                </p>
+            </div>
+
+            <div class = 'benefits__item item-03'>
+                <h3 class = 'benefits__subtitle'>
+                    Бесплатная диагностика
+                </h3>
+                <p class = 'benefits__desc'>
+                    Мастер выезжает на место и проводит бесплатную диагностику
+                </p>
+            </div>
+
+            <div class = 'benefits__item item-04'>
+                <h3 class = 'benefits__subtitle'>
+                    Ремонт
+                </h3>
+                <p class = 'benefits__desc'>
+                    Согласуем ремонт, устраняем неисправность, возвращаем работающую технику
+                </p>
+            </div>
+
+            <div class = 'benefits__item item-05'>
+                <h3 class = 'benefits__subtitle'>
+                    Гарантия до 1 года
+                </h3>
+                <p class = 'benefits__desc'>
+                    После ремонта выдаем акт
+                    с гарантией
+                </p>
+            </div>
+        </div>
     </section>
+
+    <!--    consult section-->
+    <section class = 'consult'>
+        <div class = 'consult__about'>
+            <h2 class = 'consult__title section-title'>
+                Бесплатная консультация
+            </h2>
+            <p class = 'consult__desc'>
+                Оставьте заявку на онлайн-консультацию
+                и получите обратную связь!
+            </p>
+            <form class = 'consult__form'>
+                <div class = 'input-field inline'>
+                    <input id = 'name_inline' type = 'text' class = 'consult__input validate' required>
+                    <label for = 'name_inline'>Имя</label>
+                </div>
+                <div class = 'input-field inline'>
+                    <input id = 'tel_inline' type = 'tel' class = 'consult__input validate' required>
+                    <label for = 'tel_inline'>Ваш телефон</label>
+                </div>
+                <button type = 'submit' class = 'consult__submit-btn btn-large waves-effect waves-light'>Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+
 
     <section id = 'contacts' class = 'contacts'>
         <div class = 'contacts__wrapper'>
             <div class = 'contacts__info'>
                 <h4 class = 'contacts__title section-title'>Контакты</h4>
+                <p class = 'contacts__desc'>
+                    Мы работаем по всей Москве и ближайшему Подмосковью без перерывов и выходных
+                    с 9 утра до 23 вечера каждый день!
+                </p>
                 <ul class = 'contacts__list'>
                     <li class = 'contacts__item'>
                         <i class = 'material-icons small'>
@@ -275,9 +308,9 @@
                     </li>
                 </ul>
             </div>
-            <div class = 'contacts__img'>
-                <img src = './img/contacts-img.jpg' alt = 'contacts'/>
-            </div>
+        </div>
+        <div class = 'contacts__map'>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06e8eb0cd65c4fd2948ae878c8041cff3d0c3e71ca0c043d8ff451334fc6064c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
     </section>
 </main>
