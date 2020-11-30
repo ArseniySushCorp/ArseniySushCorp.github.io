@@ -63,7 +63,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  section.about .about__wrapper button.about__call-btn{
+  section.about .about__wrapper a.about__call-btn{
     margin-left: 30px;
   }
   section.consult .consult__about form.consult__form{
@@ -118,20 +118,13 @@
   footer.footer .footer__wrapper{
     margin-left: 15px;
   }
-  section.about .about__wrapper button.about__call-btn{
-    margin: 15px 0 0 0;
-    display: block;
-    position: relative;
-    top: 0;
-    z-index: 0;
-  }
 }
 
 @media screen and (max-width: 560px) {
   section.about .about__wrapper{
     margin-left: 4%;
     max-width: 400px;
-    button.about__call-btn{
+    a.about__call-btn{
       display: none;
     }
   }
@@ -139,7 +132,7 @@
     background-position: left;
   }
   section.benefits{
-    height: 110vh;
+    height: 1000px;
     h2.benefits__title{
       padding-top: 50px;
       font-size: 24px;
@@ -176,14 +169,6 @@
   font-size: 13px;
   line-height: 22px;
   }
-  //section.about .about__wrapper h1.about__title{
-  //  font-size: 33px;
-  //  line-height: 43px;
-  //}
-  //section.about .about__wrapper p.about__desc{
-  //  font-size: 14px;
-  //  line-height: 20px;
-  //}
 }
 @media screen and (max-width: 425px){
   section.about .about__wrapper{
@@ -199,12 +184,6 @@
   section.consult .consult__about p.consult__desc{
     line-height: 20px;
   }
-  //section.benefits{
-  //  margin-bottom: 30px;
-  //  .benefits__wrapper .benefits__item{
-  //    align-self: center !important;
-  //  }
-  //}
   section.prices h2.prices__title{
     margin-bottom: 23px;
   }
@@ -249,6 +228,27 @@
 
     section.benefits .benefits__wrapper .benefits__item{
       align-self: flex-start !important;
+    }
+  }
+  .about__link:last-child{
+    display: none;
+  }
+  main.prices__main{
+    h1.main__title{
+      font-size: 42px;
+    }
+    section.main__section{
+      font-size: 10px;
+      .section__row p.row__desc{
+        max-width: 200px;
+      }
+      h3.section__title{
+        font-size: 28px;
+        text-align: center;
+      }
+      .section__desc{
+        text-align: center;
+      }
     }
   }
 }

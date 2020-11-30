@@ -6,7 +6,8 @@ const benefitsItem = document.querySelectorAll('.benefits__item')
 const sidenav = document.querySelector('.sidenav')
 const consultForm = document.querySelector('.consult__form')
 const masterForm = document.querySelector('.master__form')
-const modal = document.querySelector('.modal')
+const thanksModal = document.querySelector('.thanks-modal')
+const politicModal = document.querySelector('.politic-modal')
 
 document.addEventListener('scroll', () => {
 	if (window.scrollY >= aboutSection.clientHeight / 2) {
@@ -30,6 +31,7 @@ document.addEventListener('scroll', () => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+	M.Modal.init(politicModal)
 	M.Sidenav.init(sidenav)
 	const sidenavInstance = M.Sidenav.getInstance(sidenav)
 	sidenav.addEventListener('click', (event) => {
@@ -66,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	const scrollTo = function () {
-		const links = document.querySelectorAll('.nav__link')
+		const links = document.querySelectorAll('.link')
 		links.forEach(each => {
 			each.addEventListener('click', function () {
 				const currentTarget = this.getAttribute('href')
@@ -77,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	scrollTo()
 }())
 
-let selector = document.querySelectorAll('input[type="tel"]')
-let im = new Inputmask('+7(999)999-99-99')
+const selector = document.querySelectorAll('input[type="tel"]')
+const im = new Inputmask('+7(999)999-99-99')
 im.mask(selector)
 
 consultForm.addEventListener('submit', (event) => {
@@ -91,13 +93,13 @@ masterForm.addEventListener('submit', (event) => {
 
 function telegramSend(event, inputClass) {
 	event.preventDefault()
-	M.Modal.init(modal)
-	const modalInstance = M.Modal.getInstance(modal)
-	const token = "";
-	const chat_id = "";
+	M.Modal.init(thanksModal)
+	const modalInstance = M.Modal.getInstance(thanksModal)
+	const token = ''
+	const chat_id = ''
 	const inputs = document.querySelectorAll(inputClass)
 	let txt = []
-	inputs.forEach( element => {
+	inputs.forEach(element => {
 		txt.push(element.value)
 	})
 	const str = txt.join(' ')
