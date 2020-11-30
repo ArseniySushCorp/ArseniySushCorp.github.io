@@ -121,6 +121,9 @@
 }
 
 @media screen and (max-width: 560px) {
+  section.about .about__wrapper h1.about__title{
+    margin: 0 0 20px 0;
+  }
   .about__buttons a, .about__link{
     left: 43px;
   }
@@ -134,7 +137,7 @@
     padding-left: 43px;
   }
   section.about .about__wrapper{
-    top: 50px;
+    top: 100px;
   }
   .about__submit-btn{
     top: 10px;

@@ -5,6 +5,11 @@
 @import "header";
 @import "footer";
 //import page end
+
+html, body {
+    text-rendering: optimizeLegibility;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -53,7 +58,6 @@ label.active {
     color: #000;
 }
 .section-title{
-    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 38px;
@@ -84,9 +88,8 @@ section.about {
         margin-left: 10%;
         height: 5000px;
         h1.about__title {
-            font-family: 'Montserrat', serif;
             font-style: normal;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 43px;
             line-height: 53px;
             margin: 0 0 39px 0;
@@ -443,7 +446,6 @@ main.prices__main {
     font-family: Roboto, sans-serif;
     font-weight: normal;
         h1.main__title {
-            font-family: Montserrat, sans-serif;
             font-weight: normal;
             font-style: normal;
             text-align: center;
@@ -453,7 +455,6 @@ main.prices__main {
         }
         section.main__section {
             h3.section__title {
-                font-family: Montserrat, sans-serif;
                 font-weight: normal;
                 font-style: normal;
             }
